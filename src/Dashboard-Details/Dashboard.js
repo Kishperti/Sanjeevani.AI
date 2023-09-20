@@ -27,8 +27,8 @@ const Dashboard = () => {
     {
       title: "Doctor Details",
       links: [
-        { path: '/DoctorPrescription', label: 'Doctor Prescription', icon: <FiBriefcase /> },
-        { path: '/DoctorMeeting', label: 'Doctor Meeting', icon: <FiBriefcase /> },
+        { path: '/DoctorMeeting', label: 'Meeting', icon: <FiBriefcase /> },
+        { path: '/DoctorPrescription', label: 'Prescription', icon: <FiBriefcase /> },
         { path: '/SearchDoctors', label: 'Search Doctors', icon: <FiBriefcase /> }
       ]
     },
@@ -36,7 +36,7 @@ const Dashboard = () => {
       title: "Patients Details",
       links: [
         { path: '/CheckUpHistory', label: 'CheckUp History', icon: <FiClipboard /> },
-        { path: '/ScheduledCheckup', label: 'Scheduled Checkup', icon: <FiClipboard /> }
+        // { path: '/ScheduledCheckup', label: 'Checkup', icon: <FiClipboard /> }
       ]
     }
   ];
