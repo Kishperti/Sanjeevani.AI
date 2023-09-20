@@ -43,7 +43,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className='flex h-screen bg-richblack-900'>
+    <div className='flex h-screen bg-richblack-900 ml-6'>
       <div className='flex flex-col w-48'>
         {sections.map(section => (
           <SidebarSection key={section.title} title={section.title} links={section.links} />
