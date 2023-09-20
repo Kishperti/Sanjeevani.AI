@@ -23,27 +23,23 @@ function ScheduleMeetings() {
   ]);
 
   return (
-    <div className="flex  bg-richblack-90">
+    <div className="flex bg-richblack-900 text-white">
       <Dashboard />
-      <div className="flex-1 p-8 ml-8 text-white">
-        <h1 className="text-3xl mb-6">Scheduled Meetings</h1>
-        <div className="grid grid-cols-4 gap-4">
-          <div className="col-span-3">
-            <ul>
-              {meetings.map(meeting => (
-                <li key={meeting.id} className="bg-white p-4 mb-4 rounded shadow-md text-richblack-900 w-[400px]">
-                  <h3 className="text-xl font-semibold mb-2">{meeting.doctorName}</h3>
-                  <p>Date: {meeting.date}</p>
-                  <p>Time: {meeting.time}</p>
-                  <p>Platform: {meeting.platform}</p>
-                  <div className=''>
-                  <p className='font-bol'>Meeting Link: <p className='text-blue-600 cursor-pointer'>{meeting.meetinglink}</p></p>
-                  </div>
-                  
-                </li>
-              ))}
-            </ul>
-          </div>
+      <div className="flex-1 p-8 ml-8">
+        <h1 className="text-3xl mb-6">Confirmed Meetings with Doctors</h1>
+        <div className="grid grid-cols-1 gap-4 text-black">
+          {meetings.map(meeting => (
+            <div key={meeting.id} className="bg-white p-4 mb-4 rounded shadow-md">
+              <h3 className="text-xl font-semibold mb-2">{meeting.doctorName}</h3>
+              <p>Date: {meeting.date}</p>
+              <p>Time: {meeting.time}</p>
+              <p>Platform: {meeting.platform}</p>
+              <div className="mt-2">
+                <p className="font-bold mb-1">Meeting Link:</p>
+                <a href={meeting.meetinglink} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">{meeting.meetinglink}</a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

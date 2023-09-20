@@ -21,11 +21,12 @@ const Dashboard = () => {
     {
       title: "AI Applications",
       links: [
-        { path: '/AiExpert', label: 'Talk to AI Expert', icon: <FiUser /> }
+        { path: '/AiExpert', label: 'Talk to AI Expert', icon: <FiUser /> },
+        { path: '/DoctorRecommendedByAi', label: 'Ai-Recomme..', icon: <FiUser /> },
       ]
     },
     {
-      title: "Doctor Details",
+      title: "Details",
       links: [
         { path: '/DoctorMeeting', label: 'Meeting', icon: <FiBriefcase /> },
         { path: '/DoctorPrescription', label: 'Prescription', icon: <FiBriefcase /> },

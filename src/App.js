@@ -13,6 +13,9 @@ import SearchDoctors from "./DashboardPages/SearchDoctors";
 import DocotorPrescription from "./DashboardPages/DocotorPrescription";
 import DocotorMeeting from "./DashboardPages/DocotorMeeting";
 import Emergency from "./DashboardPages/Emergency";
+import CheckupHistory from "./DashboardPages/CheckupHistory";
+import DoctorRecommendedByAi from "./DashboardPages/DoctorRecommendedByAi";
+import Analysis from "./DashboardPages/Analysis";
 
 
 // import { Route, Routes } from "react-router-dom"
@@ -44,6 +47,9 @@ function App() {
         <Route path="/DoctorPrescription" element={<DocotorPrescription />} />
         <Route path="/DoctorMeeting" element={<DocotorMeeting />} />
         <Route path="/Emergency" element={<Emergency />} />
+        <Route path="/CheckUpHistory" element={<CheckupHistory />} />
+        <Route path="/DoctorRecommendedByAi" element={<DoctorRecommendedByAi />} />
+        <Route path="/Analysis" element={<Analysis />} />
       </Routes>
       
 
